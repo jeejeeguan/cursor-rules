@@ -1,34 +1,31 @@
 # Guidelines
 
 ## Language
-
 - Always respond in 简体中文
 
 ## Code style
-
 - Use ES modules (import/export) syntax, not CommonJS (require)
 - Destructure imports when possible (eg. import { foo } from 'bar')
 
 ## Workflow
-
 - Be sure to typecheck when you’re done making a series of code changes
 - Prefer running single tests, and not the whole test suite, for performance
 
 ## Run project
-
 - After successfully running the project, if there are access ports, they should be displayed to the user, for example, http://localhost:3000.
 
 ## Documentation and Planning Requirements
 
 ### Mandatory Documentation for Major Changes
 
-When implementing any significant module changes, feature additions, or architectural modifications, you MUST create and maintain documentation in the `docs/plan/` directory.
+When implementing any significant module changes, feature additions, or architectural modifications, you MUST create and maintain documentation in the `./docs/plan/` directory relative to the project root.
 
 #### Required Documentation Process
 
 1. **Create Planning Document**: Before starting any major modification, create a detailed plan document in `docs/plan/[feature-name]-plan.md`
 2. **Document Progress**: Update the plan document with progress status as work progresses
 3. **Maintain Both Tracking Systems**: Use both in-memory todo lists AND persistent documentation
+4. **Language Requirement**: All plan documents MUST be written in Simplified Chinese (简体中文)
 
 #### Plan Document Structure
 
@@ -90,4 +87,3 @@ List of all files that will be modified
 - Keep status current for team visibility
 
 This ensures that all major work is properly tracked, documented, and can be resumed by anyone on the team.
-
